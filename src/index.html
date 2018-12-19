@@ -1,13 +1,297 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>Tailwind Starter Template</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  </head>
-  <body>
-    <div class="min-h-screen flex items-center justify-center">
-      <h1 class="text-5xl text-purple font-sans">Greetings.</h1>
-    </div>
-  </body>
+<!DOCTYPE html>
+<html class="overflow-y-scroll h-full" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>ShapeBlock - OpenShift on your servers</title>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+        <style media="screen">
+         .font-sans {
+             font-family: 'Source Sans Pro', apple-system, BlinkMacSystemFont, 'Helvetica Neue', arial, sans-serif;
+         }
+	 .mauticform-message {
+	     padding-bottom: 10px;
+	 }
+        </style>
+    </head>
+    <body class="font-sans text-black h-full">
+        <header class="absolute pin-t pin-l w-full py-4">
+            <div class="flex items-center justify-between px-8">
+                <span class="text-2xl tracking-tight font-semibold">
+                    ShapeBlock
+                </span>
+                <div class="">
+                    <div class="flex items-center">
+                        <a class="bg-blue hover:bg-blue-dark text-2xl leading-none text-white font-semibold px-8 py-2 rounded-full whitespace-no-wrap mb-2 no-underline" href="#">Login</a>
+                        <a class="text-lg leading-normal text-blue hover:text-blue-dark ml-8" href="#story">About</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="bg-grey-lightest h-full py-8">
+            <div class="w-5/6 max-w-lg ml-auto mr-auto h-full">
+                <div class="flex items-center justify-center text-center h-full">
+                    <div>
+			<div class="pt-8">
+			    <img src="shapeblock-deploy.png" alt="shapeblock deploy" />
+			</div>
+                        <h1 class="text-4xl sm:text-5xl font-semibold leading-none tracking-tight mb-4">ShapeBlock helps developers, startups and agencies deploy, manage and scale apps on their own servers.</h1>
+                        <h2 class="text-2xl sm:text-3xl text-blue-darker opacity-75 font-normal leading-tight mb-8">Want to run something like Heroku on your own infrastructure?</h2>
+                        <div class="flex flex-col sm:flex-row items-center justify-center sm:pt-3 mb-3 sm:mb-6">
+			    <div id="mauticform_wrapper_testform" class="mauticform_wrapper">
+				<form autocomplete="false" role="form" method="post" action="https://mautic.craftofcoding.com/form/submit?formId=5" id="mauticform_testform" data-mautic-form="testform" enctype="multipart/form-data">
+				    <div class="mauticform-error" id="mauticform_testform_error"></div>
+				    <div class="mauticform-message" id="mauticform_testform_message"></div>
+				    <input type="email" id="mauticform_input_testform_email" name="mauticform[email]" placeholder="Enter your email" class="appearance-none border px-6 py-3 rounded-full block w-full mb-4">
+				    <span class="mauticform-errormsg" style="display: none;">This is required.</span>
+				    <input id="mauticform_input_testform_captcha" name="mauticform[captcha]" value="" class="mauticform-input" type="text">
+				    <button type="submit" name="mauticform[submit]" id="mauticform_input_testform_submit" class="bg-blue hover:bg-blue-dark text-2xl leading-none text-white font-semibold h-12 px-8 rounded-full whitespace-no-wrap mb-2 sm:mb-0 sm:mr-2 w-full" data-bcup-haslogintext="no">Request a free trial</button>
+				    <input type="hidden" name="mauticform[formId]" id="mauticform_testform_id" value="5">
+				    <input type="hidden" name="mauticform[return]" id="mauticform_testform_return" value="">
+				    <input type="hidden" name="mauticform[formName]" id="mauticform_testform_name" value="testform">
+				</form>
+			    </div>			    
+                        </div>
+                        <div class="flex flex-col sm:flex-row justify-center pt-8">
+                            <a class="bg-blue hover:bg-blue-dark text-2xl leading-none text-white font-semibold px-8 py-2 rounded-full whitespace-no-wrap mb-2 no-underline" href="#about-sb">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white py-8">
+            <div class="w-5/6 max-w-lg ml-auto mr-auto mt-8 mb-8">
+                <div class="flex flex-wrap -mx-6 -my-6">
+                    <div class="w-full sm:w-1/2 px-6 py-6">
+                        <div class="mb-8 text-5xl text-blue-dark text-center">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="text-3xl sm:text-4xl font-semibold tracking-tight leading-none mb-3">Focus on writing code, not deploying</h3>
+                        <p class="text-lg sm:text-xl leading-normal text-grey-darker mb-8">Spend your time shipping awesome features to your users faster, not on staging, deploying and scaling your apps.</p>
+                    </div>
+                    <div class="w-full sm:w-1/2 px-6 py-6">
+                        <div class="mb-8 text-5xl text-blue-dark text-center">
+			    <i class="fas fa-piggy-bank"></i>
+                        </div>
+                        <h3 class="text-3xl sm:text-4xl font-semibold tracking-tight leading-none mb-3">Reduce infrastructure costs</h3>
+                        <p class="text-lg sm:text-xl leading-normal text-grey-darker mb-8">Running your app on a PaaS can be expensive, especially if you use a host of other third party services to support it.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="flex justify-center">
+            <div class="bg-grey-light h-1 w-16 rounded"></div>
+        </div>
+
+        <section class="bg-white py-8">
+            <div class="w-5/6 max-w-lg ml-auto mr-auto mt-8 mb-8">
+                <div class="flex flex-col md:flex-row items-center justify-center">
+                    <h4 class="text-4xl font-normal mr-6 mb-8 md:mb-0 text-center md:text-left">ShapeBlock is in closed beta now</h4>
+		    <div id="mauticform_wrapper_testform" class="mauticform_wrapper">
+			<form autocomplete="false" role="form" method="post" action="https://mautic.craftofcoding.com/form/submit?formId=5" id="mauticform_testform" data-mautic-form="testform" enctype="multipart/form-data">
+			    <div class="mauticform-error" id="mauticform_testform_error"></div>
+			    <div class="mauticform-message" id="mauticform_testform_message"></div>
+			    <input type="email" id="mauticform_input_testform_email" name="mauticform[email]" placeholder="Enter your email" class="appearance-none border px-6 py-3 rounded-full block w-full mb-4">
+			    <span class="mauticform-errormsg" style="display: none;">This is required.</span>
+			    <input id="mauticform_input_testform_captcha" name="mauticform[captcha]" value="" class="mauticform-input" type="text">
+			    <button type="submit" name="mauticform[submit]" id="mauticform_input_testform_submit" class="bg-blue hover:bg-blue-dark text-2xl leading-none text-white font-semibold h-12 px-8 rounded-full whitespace-no-wrap mb-2 sm:mb-0 sm:mr-2 w-full" data-bcup-haslogintext="no">Request a free trial</button>
+			    <input type="hidden" name="mauticform[formId]" id="mauticform_testform_id" value="5">
+			    <input type="hidden" name="mauticform[return]" id="mauticform_testform_return" value="">
+			    <input type="hidden" name="mauticform[formName]" id="mauticform_testform_name" value="testform">
+			</form>
+		    </div>			    
+                </div>
+            </div>
+        </section>
+
+        <div class="flex justify-center">
+            <div class="bg-grey-light h-1 w-16 rounded"></div>
+        </div>
+
+        <section class="bg-white py-8" id="about-sb">
+            <div class="w-5/6 max-w-lg ml-auto mr-auto mt-8 mb-8">
+                <div class="flex flex-col justify-center text-center pb-8">
+                    <h2 class="text-5xl font-semibold leading-none tracking-tight mb-4">ShapeBlock provisions a scalable OpenShift cluster on your own servers.</h2>
+                    <h3 class="text-3xl text-blue-darker opacity-75 font-normal leading-none mb-8">Just choose which cloud you want to launch your cluster on, and configure your cluster parameters.</h3>
+                </div>
+            </div>
+
+            <div class="w-5/6 max-w-md ml-auto mr-auto pt-8 mt-8 mb-8">
+                <div class="flex flex-wrap -mx-6 -my-6">
+                    <div class="w-full px-6 py-6">
+                        <h3 class="text-2xl font-semibold leading-tight mb-3">Take the pain out of setting up and maintaing your Kubernetes cluster</h3>
+                        <p class="text-2xl leading-normal text-grey-darker mb-8">Care and feeding of a Kubernetes cluster can be daunting, even if done right. ShapeBlock setups up a robust setup for you on your servers at the comfort of your browser.</p>
+                    </div>
+                    <div class="w-full px-6 py-6">
+                        <h3 class="text-2xl font-semibold leading-tight mb-3">Made for developers, by developers</h3>
+                        <p class="text-2xl leading-normal text-grey-darker mb-8">Get best-in-class features. like scaling, monitoring, SSL, logging, backups and Continuous Delivery baked into your workflow.</p>
+                    </div>
+                    <div class="w-full px-6 py-6">
+                        <h3 class="text-2xl font-semibold leading-tight mb-3">Work with the language you already love</h3>
+                        <p class="text-5xl leading-normal text-grey-darker mb-8">
+			    <i class="devicon-python-plain colored"></i>
+			    <i class="devicon-nodejs-plain colored"></i>
+			    <i class="devicon-ruby-plain colored"></i>
+			    <i class="devicon-php-plain colored"></i>
+			    <i class="devicon-java-plain colored"></i>
+			</p>
+                    </div>
+                    <div class="w-full px-6 py-6">
+                        <h3 class="text-2xl font-semibold leading-tight mb-3">No vendor lockin</h3>
+                        <p class="text-2xl leading-normal text-grey-darker mb-8">ShapeBlock is built fully on open standards. You are not locked in by any proprietary tools.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="flex justify-center">
+            <div class="bg-grey-light h-1 w-16 rounded"></div>
+        </div>
+
+        <section class="bg-white py-8">
+            <div class="w-5/6 max-w-lg ml-auto mr-auto mt-8 mb-8">
+                <div class="flex flex-col md:flex-row items-center justify-center">
+                    <h4 class="text-4xl font-normal mr-6 mb-8 md:mb-0 text-center md:text-left">ShapeBlock is in closed beta now</h4>
+		    <div id="mauticform_wrapper_testform" class="mauticform_wrapper">
+			<form autocomplete="false" role="form" method="post" action="https://mautic.craftofcoding.com/form/submit?formId=5" id="mauticform_testform" data-mautic-form="testform" enctype="multipart/form-data">
+			    <div class="mauticform-error" id="mauticform_testform_error"></div>
+			    <div class="mauticform-message" id="mauticform_testform_message"></div>
+			    <input type="email" id="mauticform_input_testform_email" name="mauticform[email]" placeholder="Enter your email" class="appearance-none border px-6 py-3 rounded-full block w-full mb-4">
+			    <span class="mauticform-errormsg" style="display: none;">This is required.</span>
+			    <input id="mauticform_input_testform_captcha" name="mauticform[captcha]" value="" class="mauticform-input" type="text">
+			    <button type="submit" name="mauticform[submit]" id="mauticform_input_testform_submit" class="bg-blue hover:bg-blue-dark text-2xl leading-none text-white font-semibold h-12 px-8 rounded-full whitespace-no-wrap mb-2 sm:mb-0 sm:mr-2 w-full" data-bcup-haslogintext="no">Request a free trial</button>
+			    <input type="hidden" name="mauticform[formId]" id="mauticform_testform_id" value="5">
+			    <input type="hidden" name="mauticform[return]" id="mauticform_testform_return" value="">
+			    <input type="hidden" name="mauticform[formName]" id="mauticform_testform_name" value="testform">
+			</form>
+		    </div>			    
+                </div>
+            </div>
+        </section>
+
+        <div class="flex justify-center">
+            <div class="bg-grey-light h-1 w-16 rounded"></div>
+        </div>
+
+        <section class="bg-white py-8" id="story">
+            <div class="w-5/6 max-w-lg ml-auto mr-auto mt-8 mb-8">
+                <div class="flex flex-col justify-center text-center pb-8">
+                    <h2 class="text-5xl font-semibold leading-none tracking-tight mb-4">I built ShapeBlock so that you don't have to.</h2>
+                    <h3 class="text-3xl text-blue-darker opacity-75 font-normal leading-none mb-8">After working as a full stack developer for little over a decade, I realized that I was spending as much time deploying code, if not more, as I was spending writing it.</h3>
+                </div>
+            </div>
+
+            <div class="w-5/6 max-w-md ml-auto mr-auto pt-8 mt-8 mb-8">
+                <p class="text-2xl leading-normal text-grey-darker mb-8">Around the same time, I discovered Docker and instantly fell in love with it. I liked the way it solved the "deployment" problem by packaging my apps and isolating them.</p>
+		<p class="text-2xl leading-normal text-grey-darker mb-8">Now I had two problems. How to use Docker in a scalable way, and how to deploy my code to production automatically.</p>
+		<p class="text-2xl leading-normal text-grey-darker mb-8">If I had to scale Docker, I had to learn and use stuff like Docker swarm and eventually Kubernetes. It was all rocket science to me. Even when I had embraced it and made my workflow efficient, the other developers had to go through the same hoops.</p>
+		<p class="text-2xl leading-normal text-grey-darker mb-8">That's when I began by abstracting away the hard parts and started tinkering with Kubernetes to get the perfect workflow for every team and project I worked. I finally zeroed in on OpenShift.</p>
+            </div>
+        </section>
+
+        <div class="flex justify-center">
+            <div class="bg-grey-light h-1 w-16 rounded"></div>
+        </div>
+
+        <section class="bg-white py-8">
+            <div class="w-5/6 max-w-lg ml-auto mr-auto mt-8 mb-8">
+                <div class="flex flex-col md:flex-row items-center justify-center">
+                    <h4 class="text-4xl font-normal mr-6 mb-8 md:mb-0 text-center md:text-left">ShapeBlock is in closed beta now</h4>
+		    <div id="mauticform_wrapper_testform" class="mauticform_wrapper">
+			<form autocomplete="false" role="form" method="post" action="https://mautic.craftofcoding.com/form/submit?formId=5" id="mauticform_testform" data-mautic-form="testform" enctype="multipart/form-data">
+			    <div class="mauticform-error" id="mauticform_testform_error"></div>
+			    <div class="mauticform-message" id="mauticform_testform_message"></div>
+			    <input type="email" id="mauticform_input_testform_email" name="mauticform[email]" placeholder="Enter your email" class="appearance-none border px-6 py-3 rounded-full block w-full mb-4">
+			    <span class="mauticform-errormsg" style="display: none;">This is required.</span>
+			    <input id="mauticform_input_testform_captcha" name="mauticform[captcha]" value="" class="mauticform-input" type="text">
+			    <button type="submit" name="mauticform[submit]" id="mauticform_input_testform_submit" class="bg-blue hover:bg-blue-dark text-2xl leading-none text-white font-semibold h-12 px-8 rounded-full whitespace-no-wrap mb-2 sm:mb-0 sm:mr-2 w-full" data-bcup-haslogintext="no">Request a free trial</button>
+			    <input type="hidden" name="mauticform[formId]" id="mauticform_testform_id" value="5">
+			    <input type="hidden" name="mauticform[return]" id="mauticform_testform_return" value="">
+			    <input type="hidden" name="mauticform[formName]" id="mauticform_testform_name" value="testform">
+			</form>
+		    </div>			    
+                </div>
+            </div>
+        </section>
+
+        <div class="flex justify-center">
+            <div class="bg-grey-light h-1 w-16 rounded"></div>
+        </div>
+
+        <section class="bg-white py-8" id="why-openshift">
+            <div class="w-5/6 max-w-lg ml-auto mr-auto mt-8 mb-8">
+                <div class="flex flex-col justify-center text-center pb-8">
+		    <div class="flex justify-center text-center pb-8">
+			<img src="openshift.png" alt="openshift" class="w-auto" />
+		    </div>
+                    <h2 class="text-5xl font-semibold leading-none tracking-tight mb-4">Why OpenShift?</h2>
+                    <h3 class="text-3xl text-blue-darker opacity-75 font-normal leading-none mb-8">Kubernetes is just the orcehstration part. There are many things you have to get right to have a useful developer workflow.</h3>
+                </div>
+            </div>
+            <div class="w-5/6 max-w-md ml-auto mr-auto pt-8 mt-8 mb-8">
+                <p class="text-2xl leading-normal text-grey-darker mb-8">Like how you build your container images, where do you store them?</p>
+		<p class="text-2xl leading-normal text-grey-darker mb-8">How would you trigger a build automatically when a developer does a git push?</p>
+		<p class="text-2xl leading-normal text-grey-darker mb-8">How to create <a class="text-blue hover:text-blue-dark" href="https://medium.com/shapeblock/why-you-might-need-staging-as-a-service-8e674281b416">staging environments</a> at will?</p>
+		<p class="text-2xl leading-normal text-grey-darker mb-8">OpenShift gives all this for you as a done-for-you assortment of components. You can also tailor these with Kubernetes, but would you go with a readymade template, or spend your precious time building the elusive "perfect Kubernetes workflow"? I'd choose the former anyday.</p>
+		<p class="text-2xl leading-normal text-grey-darker mb-8">The only friction I had with OpenShift was that it was hard to install. I managed to <a class="text-blue hover:text-blue-dark" href="https://www.craftofcoding.com/openshift-origin-installation/">install stable OpenShift clusters</a> and converted it into a set of reusable scripts, using awesome tools like <a class="text-blue hover:text-blue-dark" href="https://www.terraform.io/">Terraform</a> and <a class="text-blue hover:text-blue-dark" href="https://www.ansible.com/">Ansible</a>. I built ShapeBlock on the shoulders of these giants.</p>
+            </div>
+	</section>
+
+        <section class="bg-grey-lightest py-8">
+            <div class="w-5/6 max-w-xl ml-auto mr-auto my-8">
+                <div class="flex md:items-center flex-col md:flex-row md:justify-between">
+                    <div class="mb-8 md:mb-0 md:pr-4">
+                        <h3 class="text-4xl font-normal tracking-tight leading-none mb-3">ShapeBlock is in closed beta right now</h3>
+                        <h4 class="text-3xl text-grey-dark font-normal leading-tight">Request a free trial.</h4>
+                    </div>
+                    <div class="md:pl-4">
+			<div id="mauticform_wrapper_testform" class="mauticform_wrapper">
+			    <form autocomplete="false" role="form" method="post" action="https://mautic.craftofcoding.com/form/submit?formId=5" id="mauticform_testform" data-mautic-form="testform" enctype="multipart/form-data">
+				<div class="mauticform-error" id="mauticform_testform_error"></div>
+				<div class="mauticform-message" id="mauticform_testform_message"></div>
+				<input type="email" id="mauticform_input_testform_email" name="mauticform[email]" placeholder="Enter your email" class="appearance-none border px-6 py-3 rounded-full block w-full mb-4">
+				<span class="mauticform-errormsg" style="display: none;">This is required.</span>
+				<input id="mauticform_input_testform_captcha" name="mauticform[captcha]" value="" class="mauticform-input" type="text">
+				<button type="submit" name="mauticform[submit]" id="mauticform_input_testform_submit" class="bg-blue hover:bg-blue-dark text-2xl leading-none text-white font-semibold h-12 px-8 rounded-full whitespace-no-wrap mb-2 sm:mb-0 sm:mr-2 w-full" data-bcup-haslogintext="no">Request a free trial</button>
+				<input type="hidden" name="mauticform[formId]" id="mauticform_testform_id" value="5">
+				<input type="hidden" name="mauticform[return]" id="mauticform_testform_return" value="">
+				<input type="hidden" name="mauticform[formName]" id="mauticform_testform_name" value="testform">
+			    </form>
+			</div>			    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-grey-lightest py-8">
+            <div class="flex flex-col-reverse md:flex-row md:items-center md:justify-between px-8">
+                <small class="block text-sm text-grey">
+                    Built with love by <a href="https://twitter.com/lakshminp">@lakshminp</a>
+                </small>
+            </div>
+        </footer>
+    </body>
+    <script type="text/javascript">
+     /** This section is only needed once per page if manually copying **/
+     if (typeof MauticSDKLoaded == 'undefined') {
+         var MauticSDKLoaded = true;
+         var head            = document.getElementsByTagName('head')[0];
+         var script          = document.createElement('script');
+         script.type         = 'text/javascript';
+         script.src          = 'https://mautic.craftofcoding.com/media/js/mautic-form.js';
+         script.onload       = function() {
+             MauticSDK.onLoad();
+         };
+         head.appendChild(script);
+         var MauticDomain = 'https://mautic.craftofcoding.com';
+         var MauticLang   = {
+             'submittingMessage': "Please wait..."
+         }
+     }
+    </script>    
 </html>
