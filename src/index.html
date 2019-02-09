@@ -42,19 +42,23 @@
                         <h1 class="text-4xl md:text-5xl font-semibold leading-none tracking-tight mb-4 mt-4 md:mt-0">Want to run something like <span class="text-red-dark">Heroku</span> on your <span class="text-red-dark">own</span> infrastructure?</h1>
                         <h2 class="text-2xl sm:text-3xl text-blue-darker opacity-75 font-normal leading-tight mb-8">ShapeBlock helps developers, startups and agencies deploy, manage and scale apps on their own servers.</h2>
                         <div class="flex flex-col sm:flex-row items-center justify-center sm:pt-3 mb-3 sm:mb-6">
-			    <div id="mauticform_wrapper_testform" class="mauticform_wrapper">
-				<form autocomplete="false" role="form" method="post" action="https://mautic.craftofcoding.com/form/submit?formId=5" id="mauticform_testform" data-mautic-form="testform" enctype="multipart/form-data">
-				    <div class="mauticform-error" id="mauticform_testform_error"></div>
-				    <div class="mauticform-message" id="mauticform_testform_message"></div>
-				    <input type="email" id="mauticform_input_testform_email" name="mauticform[email]" placeholder="Enter your email" class="appearance-none border px-6 py-3 rounded-full block w-full mb-4">
-				    <span class="mauticform-errormsg" style="display: none;">This is required.</span>
-				    <input id="mauticform_input_testform_captcha" name="mauticform[captcha]" value="" class="mauticform-input" type="text" style="display: none;">
-				    <button type="submit" name="mauticform[submit]" id="mauticform_input_testform_submit" class="bg-blue hover:bg-blue-dark text-xl md:text-2xl leading-none text-white font-semibold h-12 px-8 rounded-full whitespace-no-wrap mb-2 sm:mb-0 sm:mr-2 w-full" data-bcup-haslogintext="no">Request a free trial</button>
-				    <input type="hidden" name="mauticform[formId]" id="mauticform_testform_id" value="5">
-				    <input type="hidden" name="mauticform[return]" id="mauticform_testform_return" value="">
-				    <input type="hidden" name="mauticform[formName]" id="mauticform_testform_name" value="testform">
-				</form>
-			    </div>			    
+			    <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+			    <form action="https://app.convertkit.com/forms/843468/subscriptions" class="seva-form formkit-form" method="post" data-sv-form="843468" data-uid="3edb340443" data-format="inline" data-version="5" data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;redirect&quot;,&quot;success_message&quot;:&quot;Success! Now check your email to confirm your subscription.&quot;,&quot;redirect_url&quot;:&quot;https://www.shapeblock.com/thankyou.html&quot;},&quot;modal&quot;:{&quot;trigger&quot;:null,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:null,&quot;devices&quot;:null,&quot;show_once_every&quot;:null},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;Thanks for signing up. Check your inbox for further instructions.&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:null,&quot;trigger&quot;:null,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:null,&quot;devices&quot;:null,&quot;show_once_every&quot;:null}}}" min-width="400 500 600 700 800">
+				<div data-style="clean">
+				    <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+				    <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields">
+					<div class="formkit-field"><input class="appearance-none border px-6 py-3 rounded-full block w-full mb-4" name="email_address" placeholder="Your email address" required="" type="text"></div>
+					<button data-element="submit" class="bg-blue hover:bg-blue-dark text-xl md:text-2xl leading-none text-white font-semibold h-12 px-8 rounded-full whitespace-no-wrap mb-2 sm:mb-0 sm:mr-2 w-full">
+					    <div class="formkit-spinner">
+						<div></div>
+						<div></div>
+						<div></div>
+					    </div>
+					    <span>Request a free trial</span>
+					</button>
+				    </div>
+				</div>
+			    </form>
                         </div>
                         <div class="flex flex-col sm:flex-row justify-center md:pt-8">
                             <a class="bg-transparent text-blue hover:text-blue-dark text-xl md:text-2xl leading-none text-white font-semibold px-4 py-2 border border-blue-lighter hover:border-blue-light rounded-full whitespace-no-wrap mb-2 no-underline" href="#about-sb">Learn more</a>
