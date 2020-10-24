@@ -2,7 +2,31 @@ apiVersion: v1
 entries:
   drupal:
   - apiVersion: v2
-    created: "2020-10-22T09:20:01.099495793+05:30"
+    created: "2020-10-24T20:01:24.398573284+05:30"
+    dependencies:
+    - condition: mariadb.enabled,drupal.mariadb.enabled,global.mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.5.x
+    - condition: memcached.enabled
+      name: memcached
+      repository: https://charts.bitnami.com/bitnami
+      version: 4.2.x
+    - condition: mailhog.enabled
+      name: mailhog
+      repository: https://codecentric.github.io/helm-charts
+      version: 3.1.x
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: file://../elasticsearch
+      version: 7.6.x
+    digest: 0f43239b0e81e2fd468247cbebf8b565bcdf5b2a1938808c5f88fd7560e6f73b
+    name: drupal
+    urls:
+    - drupal-0.3.44.tgz
+    version: 0.3.44
+  - apiVersion: v2
+    created: "2020-10-24T20:01:24.381942908+05:30"
     dependencies:
     - condition: mariadb.enabled,drupal.mariadb.enabled,global.mariadb.enabled
       name: mariadb
@@ -25,4 +49,4 @@ entries:
     urls:
     - drupal-0.3.43.tgz
     version: 0.3.43
-generated: "2020-10-22T09:20:01.082767643+05:30"
+generated: "2020-10-24T20:01:24.365472656+05:30"
