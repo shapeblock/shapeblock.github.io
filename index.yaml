@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   drupal:
   - apiVersion: v2
-    created: "2020-11-01T16:22:40.292839677+05:30"
+    created: "2020-11-01T19:21:53.934752021+05:30"
     dependencies:
     - condition: mariadb.enabled,drupal.mariadb.enabled,global.mariadb.enabled
       name: mariadb
@@ -26,7 +26,7 @@ entries:
     - drupal-0.3.45.tgz
     version: 0.3.45
   - apiVersion: v2
-    created: "2020-11-01T16:22:40.275247763+05:30"
+    created: "2020-11-01T19:21:53.919465402+05:30"
     dependencies:
     - condition: mariadb.enabled,drupal.mariadb.enabled,global.mariadb.enabled
       name: mariadb
@@ -52,18 +52,18 @@ entries:
   drupal-tekton:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-11-01T16:22:40.293348634+05:30"
+    created: "2020-11-01T19:21:53.935149918+05:30"
     description: A Helm chart for setting up a Drupal 8 build workflow
-    digest: a371c14259ee2b87046280d2d7363b01cb23dc56a4e017a5763fe3ce8dcd63af
+    digest: bc73f725114f27749b8348986b9cbfc4cc225436d9ab83cd024ab94f3cb1a4d3
     name: drupal-tekton
     type: application
     urls:
-    - drupal-tekton-0.1.4.tgz
-    version: 0.1.4
+    - drupal-tekton-0.1.5.tgz
+    version: 0.1.5
   mychart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-11-01T16:22:40.293652749+05:30"
+    created: "2020-11-01T19:21:53.935398478+05:30"
     description: A Helm chart for Kubernetes
     digest: b0556bc91f12787fc2cc7ddabef281d7c148dab945763d73dcafb8678f101ca3
     name: mychart
@@ -73,7 +73,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-11-01T16:22:40.293490698+05:30"
+    created: "2020-11-01T19:21:53.935263639+05:30"
     description: A Helm chart for Kubernetes
     digest: 9452bed6eea7499ffb3bdbb676ff94fc326aaec297ce914723c071d2dbfa825f
     name: mychart
@@ -81,4 +81,4 @@ entries:
     urls:
     - mychart-0.1.0.tgz
     version: 0.1.0
-generated: "2020-11-01T16:22:40.259282667+05:30"
+generated: "2020-11-01T19:21:53.901707536+05:30"
