@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   drupal:
   - apiVersion: v2
-    created: "2020-11-23T19:11:23.235043057+05:30"
+    created: "2021-01-11T16:44:58.96783353+05:30"
     dependencies:
     - condition: mariadb.enabled,drupal.mariadb.enabled,global.mariadb.enabled
       name: mariadb
@@ -26,7 +26,7 @@ entries:
     - drupal-0.3.46.tgz
     version: 0.3.46
   - apiVersion: v2
-    created: "2020-11-23T19:11:23.220597875+05:30"
+    created: "2021-01-11T16:44:58.946815824+05:30"
     dependencies:
     - condition: mariadb.enabled,drupal.mariadb.enabled,global.mariadb.enabled
       name: mariadb
@@ -52,7 +52,17 @@ entries:
   drupal-tekton:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-11-23T19:11:23.235689207+05:30"
+    created: "2021-01-11T16:44:58.969071201+05:30"
+    description: A Helm chart for setting up a Drupal 8 build workflow
+    digest: ec44ecfc7f2fd8894e1af59c53926078aebd2e5a37aca854d433fc6a60f7d28a
+    name: drupal-tekton
+    type: application
+    urls:
+    - drupal-tekton-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-01-11T16:44:58.968495636+05:30"
     description: A Helm chart for setting up a Drupal 8 build workflow
     digest: bc73f725114f27749b8348986b9cbfc4cc225436d9ab83cd024ab94f3cb1a4d3
     name: drupal-tekton
@@ -63,7 +73,7 @@ entries:
   mychart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-11-23T19:11:23.236360356+05:30"
+    created: "2021-01-11T16:44:58.969609675+05:30"
     description: A Helm chart for Kubernetes
     digest: b0556bc91f12787fc2cc7ddabef281d7c148dab945763d73dcafb8678f101ca3
     name: mychart
@@ -73,7 +83,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-11-23T19:11:23.236008324+05:30"
+    created: "2021-01-11T16:44:58.969333022+05:30"
     description: A Helm chart for Kubernetes
     digest: 9452bed6eea7499ffb3bdbb676ff94fc326aaec297ce914723c071d2dbfa825f
     name: mychart
@@ -81,4 +91,4 @@ entries:
     urls:
     - mychart-0.1.0.tgz
     version: 0.1.0
-generated: "2020-11-23T19:11:23.206664624+05:30"
+generated: "2021-01-11T16:44:58.927632272+05:30"
