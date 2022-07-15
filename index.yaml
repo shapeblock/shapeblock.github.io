@@ -2,7 +2,29 @@ apiVersion: v1
 entries:
   django:
   - apiVersion: v2
-    created: "2022-06-18T12:00:09.128311007+05:30"
+    created: "2022-07-15T17:48:17.372455358+05:30"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.x
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.11.x
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.x
+    description: A Helm chart for Kubernetes
+    digest: 4a7440afb2f81e7957ca4c96541405303d06dc46fdc11b03e62860fca797f505
+    name: django
+    type: application
+    urls:
+    - django-1.0.3.tgz
+    version: 1.0.3
+  - apiVersion: v2
+    created: "2022-07-15T17:48:17.357855579+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -21,7 +43,7 @@ entries:
     version: 1.0.1
   drupal:
   - apiVersion: v2
-    created: "2022-06-18T12:00:09.148893334+05:30"
+    created: "2022-07-15T17:48:17.398359284+05:30"
     dependencies:
     - condition: mariadb.enabled,drupal.mariadb.enabled,global.mariadb.enabled
       name: mariadb
@@ -45,7 +67,7 @@ entries:
     - drupal-0.4.1.tgz
     version: 0.4.1
   - apiVersion: v2
-    created: "2022-06-18T12:00:09.136188439+05:30"
+    created: "2022-07-15T17:48:17.380356694+05:30"
     dependencies:
     - condition: mariadb.enabled,drupal.mariadb.enabled,global.mariadb.enabled
       name: mariadb
@@ -71,7 +93,7 @@ entries:
   drupal-tekton:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-18T12:00:09.151819807+05:30"
+    created: "2022-07-15T17:48:17.403279503+05:30"
     description: A Helm chart for setting up a Drupal 8 build workflow
     digest: 2abe2b748333d1e47b608a1d88c942d28c5016c81747c8c484f653239eecabdf
     name: drupal-tekton
@@ -81,7 +103,7 @@ entries:
     version: 0.2.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-18T12:00:09.14985285+05:30"
+    created: "2022-07-15T17:48:17.399950692+05:30"
     description: A Helm chart for setting up a Drupal 8 build workflow
     digest: ec44ecfc7f2fd8894e1af59c53926078aebd2e5a37aca854d433fc6a60f7d28a
     name: drupal-tekton
@@ -91,7 +113,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-18T12:00:09.149375144+05:30"
+    created: "2022-07-15T17:48:17.399191218+05:30"
     description: A Helm chart for setting up a Drupal 8 build workflow
     digest: bc73f725114f27749b8348986b9cbfc4cc225436d9ab83cd024ab94f3cb1a4d3
     name: drupal-tekton
@@ -102,7 +124,7 @@ entries:
   kpack:
   - apiVersion: v2
     appVersion: 0.5.2
-    created: "2022-06-18T12:00:09.153850748+05:30"
+    created: "2022-07-15T17:48:17.405690542+05:30"
     description: A Helm chart for Kpack
     digest: 8f1a83bb0ab6137c25f3fda569bce3dcab10d67b2836cd2d803ef9573e60951c
     name: kpack
@@ -112,7 +134,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 0.5.2
-    created: "2022-06-18T12:00:09.153214552+05:30"
+    created: "2022-07-15T17:48:17.404744546+05:30"
     description: A Helm chart for Kpack
     digest: 8f350dbfdc64086729a0369caf115f717bdb0c2ca5b15f963d1885e05fb046ef
     name: kpack
@@ -123,7 +145,7 @@ entries:
   mychart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-18T12:00:09.154285476+05:30"
+    created: "2022-07-15T17:48:17.406190221+05:30"
     description: A Helm chart for Kubernetes
     digest: b0556bc91f12787fc2cc7ddabef281d7c148dab945763d73dcafb8678f101ca3
     name: mychart
@@ -133,7 +155,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-18T12:00:09.154062649+05:30"
+    created: "2022-07-15T17:48:17.405927975+05:30"
     description: A Helm chart for Kubernetes
     digest: 9452bed6eea7499ffb3bdbb676ff94fc326aaec297ce914723c071d2dbfa825f
     name: mychart
@@ -144,7 +166,7 @@ entries:
   nodejs:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-18T12:00:09.233784015+05:30"
+    created: "2022-07-15T17:48:17.511314368+05:30"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -175,7 +197,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-18T12:00:09.21429977+05:30"
+    created: "2022-07-15T17:48:17.479909431+05:30"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -206,7 +228,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-18T12:00:09.195806632+05:30"
+    created: "2022-07-15T17:48:17.451581416+05:30"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -237,7 +259,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-18T12:00:09.173568186+05:30"
+    created: "2022-07-15T17:48:17.427079645+05:30"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -268,7 +290,7 @@ entries:
     version: 0.1.0
   php:
   - apiVersion: v2
-    created: "2022-06-18T12:00:09.243840863+05:30"
+    created: "2022-07-15T17:48:17.527284069+05:30"
     dependencies:
     - condition: mariadb.enabled,php.mariadb.enabled,global.mariadb.enabled
       name: mariadb
@@ -291,4 +313,4 @@ entries:
     urls:
     - php-0.4.1.tgz
     version: 0.4.1
-generated: "2022-06-18T12:00:09.118324001+05:30"
+generated: "2022-07-15T17:48:17.34742123+05:30"
