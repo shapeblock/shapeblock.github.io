@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   django:
   - apiVersion: v2
-    created: "2023-09-17T08:36:12.204767+05:30"
+    created: "2023-09-19T21:41:01.211636+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -24,7 +24,7 @@ entries:
     - django-4.0.0.tgz
     version: 4.0.0
   - apiVersion: v2
-    created: "2023-09-17T08:36:12.197663+05:30"
+    created: "2023-09-19T21:41:01.199305+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -46,7 +46,7 @@ entries:
     - django-1.1.1.tgz
     version: 1.1.1
   - apiVersion: v2
-    created: "2023-09-17T08:36:12.191322+05:30"
+    created: "2023-09-19T21:41:01.187524+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -68,7 +68,7 @@ entries:
     - django-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2023-09-17T08:36:12.184501+05:30"
+    created: "2023-09-19T21:41:01.175776+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -90,7 +90,7 @@ entries:
     - django-1.0.9.tgz
     version: 1.0.9
   - apiVersion: v2
-    created: "2023-09-17T08:36:12.177508+05:30"
+    created: "2023-09-19T21:41:01.163913+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -112,7 +112,7 @@ entries:
     - django-1.0.8.tgz
     version: 1.0.8
   - apiVersion: v2
-    created: "2023-09-17T08:36:12.170282+05:30"
+    created: "2023-09-19T21:41:01.152243+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -134,7 +134,7 @@ entries:
     - django-1.0.7.tgz
     version: 1.0.7
   - apiVersion: v2
-    created: "2023-09-17T08:36:12.162502+05:30"
+    created: "2023-09-19T21:41:01.140468+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -156,7 +156,7 @@ entries:
     - django-1.0.6.tgz
     version: 1.0.6
   - apiVersion: v2
-    created: "2023-09-17T08:36:12.154568+05:30"
+    created: "2023-09-19T21:41:01.128224+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -178,7 +178,7 @@ entries:
     - django-1.0.5.tgz
     version: 1.0.5
   - apiVersion: v2
-    created: "2023-09-17T08:36:12.145904+05:30"
+    created: "2023-09-19T21:41:01.116087+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -201,7 +201,7 @@ entries:
     version: 1.0.4
   drupal:
   - apiVersion: v2
-    created: "2023-09-17T08:36:12.258629+05:30"
+    created: "2023-09-19T21:41:01.306305+05:30"
     dependencies:
     - condition: mariadb.enabled,php.mariadb.enabled,global.mariadb.enabled
       name: mariadb
@@ -225,7 +225,7 @@ entries:
     - drupal-0.4.8.tgz
     version: 0.4.8
   - apiVersion: v2
-    created: "2023-09-17T08:36:12.250652+05:30"
+    created: "2023-09-19T21:41:01.292218+05:30"
     dependencies:
     - condition: mariadb.enabled,php.mariadb.enabled,global.mariadb.enabled
       name: mariadb
@@ -249,7 +249,7 @@ entries:
     - drupal-0.4.7.tgz
     version: 0.4.7
   - apiVersion: v2
-    created: "2023-09-17T08:36:12.242538+05:30"
+    created: "2023-09-19T21:41:01.278234+05:30"
     dependencies:
     - condition: mariadb.enabled,php.mariadb.enabled,global.mariadb.enabled
       name: mariadb
@@ -273,7 +273,7 @@ entries:
     - drupal-0.4.6.tgz
     version: 0.4.6
   - apiVersion: v2
-    created: "2023-09-17T08:36:12.234095+05:30"
+    created: "2023-09-19T21:41:01.264066+05:30"
     dependencies:
     - condition: mariadb.enabled,php.mariadb.enabled,global.mariadb.enabled
       name: mariadb
@@ -297,7 +297,7 @@ entries:
     - drupal-0.4.5.tgz
     version: 0.4.5
   - apiVersion: v2
-    created: "2023-09-17T08:36:12.226074+05:30"
+    created: "2023-09-19T21:41:01.249984+05:30"
     dependencies:
     - condition: mariadb.enabled,php.mariadb.enabled,global.mariadb.enabled
       name: mariadb
@@ -321,7 +321,7 @@ entries:
     - drupal-0.4.3.tgz
     version: 0.4.3
   - apiVersion: v2
-    created: "2023-09-17T08:36:12.220165+05:30"
+    created: "2023-09-19T21:41:01.239159+05:30"
     dependencies:
     - condition: mariadb.enabled,php.mariadb.enabled,global.mariadb.enabled
       name: mariadb
@@ -345,7 +345,7 @@ entries:
     - drupal-0.4.2.tgz
     version: 0.4.2
   - apiVersion: v2
-    created: "2023-09-17T08:36:12.214295+05:30"
+    created: "2023-09-19T21:41:01.228725+05:30"
     dependencies:
     - condition: mariadb.enabled,drupal.mariadb.enabled,global.mariadb.enabled
       name: mariadb
@@ -369,7 +369,7 @@ entries:
     - drupal-0.4.1.tgz
     version: 0.4.1
   - apiVersion: v2
-    created: "2023-09-17T08:36:12.208076+05:30"
+    created: "2023-09-19T21:41:01.217499+05:30"
     dependencies:
     - condition: mariadb.enabled,drupal.mariadb.enabled,global.mariadb.enabled
       name: mariadb
@@ -395,7 +395,7 @@ entries:
   drupal-tekton:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-17T08:36:12.260093+05:30"
+    created: "2023-09-19T21:41:01.309222+05:30"
     description: A Helm chart for setting up a Drupal 8 build workflow
     digest: 2abe2b748333d1e47b608a1d88c942d28c5016c81747c8c484f653239eecabdf
     name: drupal-tekton
@@ -405,7 +405,7 @@ entries:
     version: 0.2.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-17T08:36:12.259048+05:30"
+    created: "2023-09-19T21:41:01.307305+05:30"
     description: A Helm chart for setting up a Drupal 8 build workflow
     digest: ec44ecfc7f2fd8894e1af59c53926078aebd2e5a37aca854d433fc6a60f7d28a
     name: drupal-tekton
@@ -415,7 +415,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-17T08:36:12.25884+05:30"
+    created: "2023-09-19T21:41:01.306764+05:30"
     description: A Helm chart for setting up a Drupal 8 build workflow
     digest: bc73f725114f27749b8348986b9cbfc4cc225436d9ab83cd024ab94f3cb1a4d3
     name: drupal-tekton
@@ -426,7 +426,7 @@ entries:
   kpack:
   - apiVersion: v2
     appVersion: 0.9.5
-    created: "2023-09-17T08:36:12.261791+05:30"
+    created: "2023-09-19T21:41:01.311796+05:30"
     description: A Helm chart for Kpack
     digest: 2b37cd3058e8c1b5f3dbe3778f504a8451b019e2bd4179e59b2615aacf51ba16
     name: kpack
@@ -436,7 +436,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 0.7.1
-    created: "2023-09-17T08:36:12.261279+05:30"
+    created: "2023-09-19T21:41:01.311273+05:30"
     description: A Helm chart for Kpack
     digest: f4929d0ecb428b8c6e161a4aab46190970e3f09bc14e5fbd261cc0844df86202
     name: kpack
@@ -446,7 +446,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 0.6.1
-    created: "2023-09-17T08:36:12.260918+05:30"
+    created: "2023-09-19T21:41:01.310766+05:30"
     description: A Helm chart for Kpack
     digest: 374334335a9d49191a893d498a6bf46c3a89ffbaebf85884c06f3fa5c53bd839
     name: kpack
@@ -456,7 +456,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 0.5.2
-    created: "2023-09-17T08:36:12.260643+05:30"
+    created: "2023-09-19T21:41:01.310255+05:30"
     description: A Helm chart for Kpack
     digest: 8f1a83bb0ab6137c25f3fda569bce3dcab10d67b2836cd2d803ef9573e60951c
     name: kpack
@@ -466,7 +466,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 0.5.2
-    created: "2023-09-17T08:36:12.26037+05:30"
+    created: "2023-09-19T21:41:01.309745+05:30"
     description: A Helm chart for Kpack
     digest: 8f350dbfdc64086729a0369caf115f717bdb0c2ca5b15f963d1885e05fb046ef
     name: kpack
@@ -477,7 +477,7 @@ entries:
   kube-oidc-proxy:
   - apiVersion: v1
     appVersion: v1.0.0
-    created: "2023-09-17T08:36:12.262061+05:30"
+    created: "2023-09-19T21:41:01.31228+05:30"
     description: A Helm chart for kube-oidc-proxy
     digest: fe7cbec4814ae18fec77ba76517acb212f685dc434c3db2779e030e419f1c026
     home: https://github.com/jetstack/kube-oidc-proxy
@@ -491,7 +491,7 @@ entries:
   mychart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-17T08:36:12.262208+05:30"
+    created: "2023-09-19T21:41:01.312583+05:30"
     description: A Helm chart for Kubernetes
     digest: b0556bc91f12787fc2cc7ddabef281d7c148dab945763d73dcafb8678f101ca3
     name: mychart
@@ -501,7 +501,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-17T08:36:12.262131+05:30"
+    created: "2023-09-19T21:41:01.312413+05:30"
     description: A Helm chart for Kubernetes
     digest: 9452bed6eea7499ffb3bdbb676ff94fc326aaec297ce914723c071d2dbfa825f
     name: mychart
@@ -512,7 +512,7 @@ entries:
   nodejs:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-17T08:36:12.305507+05:30"
+    created: "2023-09-19T21:41:01.388402+05:30"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -543,7 +543,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-17T08:36:12.294637+05:30"
+    created: "2023-09-19T21:41:01.370033+05:30"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -574,7 +574,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-17T08:36:12.284371+05:30"
+    created: "2023-09-19T21:41:01.351421+05:30"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -605,7 +605,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-17T08:36:12.272911+05:30"
+    created: "2023-09-19T21:41:01.331005+05:30"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -636,7 +636,7 @@ entries:
     version: 0.1.0
   php:
   - apiVersion: v2
-    created: "2023-09-17T08:36:12.310967+05:30"
+    created: "2023-09-19T21:41:01.397507+05:30"
     dependencies:
     - condition: mariadb.enabled,php.mariadb.enabled,global.mariadb.enabled
       name: mariadb
@@ -662,7 +662,46 @@ entries:
   shapeblock:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-17T08:36:12.313298+05:30"
+    created: "2023-09-19T21:41:01.430483+05:30"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.*
+    - condition: mongodb.enabled
+      name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.*
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.*
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 18.*
+    - condition: opensearch.enabled
+      name: opensearch
+      repository: https://charts.bitnami.com/bitnami
+      version: 0.2.*
+    - condition: rabbitmq.enabled
+      name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.*
+    - condition: universal-chart.enabled
+      name: universal-chart
+      repository: https://registry.nixys.ru/chartrepo/public
+      version: 2.4.*
+    description: A Helm chart for Kubernetes
+    digest: b7ac0a4157275c28f7fc6d117bd81e00101b0d95587864ea130c7e13d945157d
+    name: shapeblock
+    type: application
+    urls:
+    - shapeblock-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-19T21:41:01.402236+05:30"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -679,4 +718,4 @@ entries:
     urls:
     - shapeblock-0.1.0.tgz
     version: 0.1.0
-generated: "2023-09-17T08:36:12.136259+05:30"
+generated: "2023-09-19T21:41:01.102363+05:30"
